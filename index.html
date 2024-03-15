@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <style>
+        body{
+            margin: -1rem 0;
+            padding: 0;
+            height: 100vh;
+            /* overflow: hidden; */
+        }
+        .background-img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 1;
+        }
+        .content{
+            margin: 0 5%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5rem;
+            color: black;
+            width: 50%;
+            /* background-color: rgb(0, 0, 0, 0.3); */
+        }
+        .characters{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .table-heads{
+            display: inline-flex;
+            width: 100%;
+        }
+        .table-heads h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            display: inline;
+            width: 50%;
+            text-align: center;
+        }
+        table tr{
+            width: 50%;
+        }
+        table tr td{
+            width: 30%;
+        }
+        table tr td img{
+            border-radius: 5%;
+            border: 2px solid white;
+            /* border-radius: 50%; */
+            aspect-ratio: 3/4;
+            width: 85%;
+            height: 10rem;
+        }
+        table{
+            backdrop-filter: blur(0px) saturate(180%);
+            -webkit-backdrop-filter: blur(0px) saturate(180%);
+            background-color: rgba(17, 25, 40, 0.55);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            padding: 3%;
+            width: 49%;
+        }
+        
+    </style>
+</head>
+<body>
+    <br>
+    <img src="images/kakashi.jpg" alt="" class="background-img">
+    <section class="content">
+        <center style="height: 5rem;"><h1>The Anime Universe</h1></center>
+        <div class="table-heads">
+            <h2>Hero</h2>
+            <h2>Villan</h2>
+        </div>
+        <section class="characters">
+            <table>
+                <tr>
+                    <td><img src="images/minato.jpg" alt=""></td>
+                    <td><img src="images/naruto.jpg" alt=""></td>
+                    <td><img src="images/itachi.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="images/goku.jpg" alt=""></td>
+                    <td><img src="images/vigita.jpg" alt=""></td>
+                    <td><img src="images/krillan.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="images/luffy.jpg" alt=""></td>
+                    <td><img src="images/zory.jpg" alt=""></td>
+                    <td><img src="images/sanji.jpg" alt=""></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><img src="images/danzo.jpg" alt=""></td>
+                    <td><img src="images/dedara.jpg" alt=""></td>
+                    <td><img src="images/hidan.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="images/kaido.jpg" alt=""></td>
+                    <td><img src="images/rocks.jpg" alt=""></td>
+                    <td><img src="images/big mom.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="images/black goku.jpg" alt=""></td>
+                    <td><img src="images/frezza.jpg" alt=""></td>
+                    <td><img src="images/buu.jpg" alt=""></td>
+                </tr>
+            </table>
+        </section>
+    </section>
+</body>
+</html>
